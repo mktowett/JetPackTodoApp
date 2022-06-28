@@ -13,5 +13,39 @@ You can learn more about using it from [Android Jetpack landing page](https://de
 ## Installation
 Clone this repository and import into **Android Studio**
 ```bash
-git clone git@github.com:wolox/<reponame>.git
+git clone 
 
+## Code Review Etiquette
+When contributing to Jetpack, follow the [code review etiquette](code-review.md).
+
+## Accepted Types of Contributions
+* Bug fixes - needs a corresponding bug report in the [Android Issue Tracker](https://issuetracker.google.com/issues/new?component=192731&template=842428)
+* Each bug fix is expected to come with tests
+* Fixing spelling errors
+* Updating documentation
+* Adding new tests to the area that is not currently covered by tests
+* New features to existing libraries if the feature request bug has been approved by an AndroidX team member.
+
+We **are not** currently accepting new modules.
+
+## Checking Out the Code
+
+Head over to the [onboarding docs](docs/onboarding.md) to learn more about getting set up and the
+development workflow!
+
+### Continuous integration
+[Our continuous integration system](https://ci.android.com/builds/branches/aosp-androidx-main/grid?) builds all in progress (and potentially unstable) libraries as new changes are merged. You can manually download these AARs and JARs for your experimentation.
+
+## Password and Contributor Agreement before making a change
+Before uploading your first contribution, you will need setup a password and agree to the contribution agreement:
+
+Generate a HTTPS password:
+https://android-review.googlesource.com/new-password
+
+Agree to the Google Contributor Licenses Agreement:
+https://android-review.googlesource.com/settings/new-agreement
+
+## Getting reviewed
+* After you run repo upload, open [r.android.com](http://r.android.com)
+* Sign in into your account (or create one if you do not have one yet)
+* Add an appropriate reviewer (use git log to find who did most modifications on the file you are fixing or check the OWNERS file in the project's directory)
